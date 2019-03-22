@@ -18,4 +18,4 @@ Install
 
 To install this node into your Node-RED environment, first clone this repo and run the command `sudo npm link`. This will create a symlink which makes it available to Node-RED.
 
-Alternatively, you can clone this repo directly into `./node-red/node_modules/` and then run `npm install` from within the directory created by this repo to install the required dependencies.
+Alternatively, you can clone this repo directly into `./node-red/node_modules/` (assuming the default install location) and then run `npm install` from within the directory created by this repo to install the required dependencies.
