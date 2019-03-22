@@ -8,8 +8,6 @@ About the model:
 
 This model takes an image file as an input and returns a segmentation map containing a predicted class for each pixel in the input image.
 
-This repository contains 2 models trained on PASCAL VOC 2012. One model is trained using the xception architecture and produces very accurate results but takes a few seconds to run and the other model is trained on MobileNetV2 and is faster but less accurate. You can specify which model you wish to use when you start the Docker image. See below for more details.
-
 The segmentation map returns an integer between 0 and 20 that corresponds to one of the labels below for each pixel in the input image. The first nested array corresponds to the top row of pixels in the image and the first element in that array corresponds to the pixel at the top left hand corner of the image. NOTE: the image will be resized and the segmentation map refers to pixels in the resized image, not the original input image.
 
 | Id | Label       | Id | Label       | Id | Label       |
