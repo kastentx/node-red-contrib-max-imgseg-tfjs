@@ -12,6 +12,16 @@ This repository contains 2 models trained on PASCAL VOC 2012. One model is train
 
 The segmentation map returns an integer between 0 and 20 that corresponds to one of the labels below for each pixel in the input image. The first nested array corresponds to the top row of pixels in the image and the first element in that array corresponds to the pixel at the top left hand corner of the image. NOTE: the image will be resized and the segmentation map refers to pixels in the resized image, not the original input image.
 
+| Id | Label       | Id | Label       | Id | Label       |
+|----|-------------|----|-------------|----|-------------|
+| 0  | background  | 7  | car         | 14 | motorbike   |
+| 1  | aeroplane   | 8  | cat         | 15 | person      |
+| 2  | bicycle     | 9  | chair       | 16 | pottedplant |
+| 3  | bird        | 10 | cow         | 17 | sheep       |
+| 4  | boat        | 11 | diningtable | 18 | sofa        |
+| 5  | bottle      | 12 | dog         | 19 | train       |
+| 6  | bus         | 13 | horse       | 20 | tv          |
+
 
 Install
 -------
