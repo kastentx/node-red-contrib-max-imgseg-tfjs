@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-max-imgseg-tfjs",
+  "version": "0.0.1",
+  "description": "Node-RED node for MAX Image Segmenter (TF.js)",
+  "main": "node.js",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\""
+  },
+  "node-red": {
+    "nodes": {
+      "max-imgseg-tfjs": "node.js"
+    }
+  },
+  "keywords": [
+    "node-red-nodegen"
+  ],
+  "devDependencies": {
+    "node-red": "0.18.7",
+    "node-red-node-test-helper": "0.1.8"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@codait/max-image-segmenter": "^0.1.1"
+  }
+}
