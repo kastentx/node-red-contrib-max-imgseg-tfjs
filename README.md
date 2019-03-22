@@ -19,3 +19,8 @@ Install
 To install this node into your Node-RED environment, first clone this repo and run the command `sudo npm link`. This will create a symlink which makes it available to Node-RED.
 
 Alternatively, you can clone this repo directly into `./node-red/node_modules/` (assuming the default install location) and then run `npm install` from within the directory created by this repo to install the required dependencies.
+
+Usage
+-----
+
+The node accepts a buffer containing image data and will return a predicted segmentation map and a list of the different objects detected. For more information on the response from the model, see the [model's documentation](https://developer.ibm.com/exchanges/models/all/max-image-segmenter/).
