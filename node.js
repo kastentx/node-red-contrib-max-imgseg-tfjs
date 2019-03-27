@@ -18,6 +18,7 @@ module.exports = function(RED) {
     "use strict";
     var util = require("util");
     var vm = require("vm");
+    const { loadModel } = require('@codait/max-image-segmenter');
 
     function sendResults(node,_msgid,msgs) {
         if (msgs == null) {
@@ -82,6 +83,11 @@ module.exports = function(RED) {
         this.topic = n.topic;
         this.outstandingTimers = [];
         this.outstandingIntervals = [];
+
+        RED.events.on("nodes-started", function() {
+            loadModel();
+        })
+
         var sandbox = {
             console:console,
             util:util,
@@ -219,6 +225,7 @@ module.exports = function(RED) {
                 // lineOffset: -11, // line number offset to be used for stack traces
                 // columnOffset: 0, // column number offset to be used for stack traces
             });
+
             this.on("input", function(msg) {
                 try {
                     var start = process.hrtime();
