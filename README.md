@@ -1,7 +1,7 @@
 node-red-contrib-max-imgseg-tfjs
 =====================
 
-[![Generic badge](https://img.shields.io/badge/status-DEPRECATED-red.svg)](https://shields.io/)
+![deprecated](https://img.shields.io/badge/-DEPRECATED-red?style=for-the-badge)
 
 <br>
 
