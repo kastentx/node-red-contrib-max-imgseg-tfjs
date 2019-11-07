@@ -1,6 +1,16 @@
 node-red-contrib-max-imgseg-tfjs
 =====================
 
+[![Generic badge](https://img.shields.io/badge/status-DEPRECATED-red.svg)](https://shields.io/)
+
+<br>
+
+>   
+> This repo is no longer updated. Find latest version here: _https://github.com/vabarbosa/tfjs-node-red_
+>   
+
+<br>
+
 This contains the Node-RED node `node-red-contrib-max-imgseg-tfjs` which uses the [MAX Image Segmenter](https://github.com/IBM/MAX-Image-Segmenter) deep learning model from the [Model Asset eXchange (MAX)](https://developer.ibm.com/exchanges/models/).
 
 About the model:
